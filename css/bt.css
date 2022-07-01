@@ -1,0 +1,53 @@
+.btbanner {
+	width: 100%;
+	margin: 40px 0px;
+	border-radius: 10px;
+}
+.row2 > div > div {
+	box-shadow: 0px 2px 4px 3px rgba(229, 229, 229, 0.25);
+	border-radius: 10px;
+	text-align: center;
+	min-height: 250px;
+	padding-bottom: 20px;
+}
+.row2 img {
+	width: 80%;
+	margin: 20px 0px;
+}
+.row2 h2 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 20px 0px;
+}
+.row2 p {
+	color: rgba(128, 128, 128, 1);
+	font-size: 14px;
+	font-weight: 400;
+}
+.row3 {
+	margin: 100px 0px;
+}
+.row3 .item > div {
+	box-shadow: 0px 2px 4px 3px rgba(229, 229, 229, 0.25);
+	border-radius: 10px;
+	cursor: pointer;
+}
+.row3 .item .title {
+	line-height: 53px;
+	padding-left: 27px;
+}
+.row3 .item .content {
+	line-height: 65px;
+	padding-left: 27px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.row3 .item .content::after {
+	position: absolute;
+	content: 'PS:点击命令即可复制';
+	right: 20px;
+	bottom: -20px;
+	color: rgba(128, 128, 128, 1);
+	font-size: 14px;
+	font-weight: 400;
+}

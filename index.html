@@ -8,22 +8,34 @@
 		<script src="thirdparty/jquery/jquery.min.js"></script>
 		<script src="thirdparty/layui/layui.js"></script>
 		<link rel="stylesheet" href="css/head.css" />
-		<title>67云数据</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<title>67云数据|首页</title>
 	</head>
 	<body>
+		<!-- 头部 -->
 		<div class="head">
 			<div class="layui-container">
 				<div class="head-top">
-					<a href=""><img src="img/logo.png" alt="" class="logo" /></a>
-					<button class="layui-btn layui-btn-normal">登录/注册</button>
+					<i class="menu layui-icon layui-icon-spread-left layui-hide-md"></i>
+					<!-- Logo -->
+					<a href="/"><img src="img/logo.png" alt="" class="logo" /></a>
+					<!-- 登录或注册 -->
+					<a class="layui-btn layui-btn-normal" href="/login">登录/注册</a>
 				</div>
 				<div class="line"></div>
 				<div class="head-bottom">
-					<span>官方售后群:123456</span>
-					<ul class="nav">
-						<li class="active">首页</li>
+					<a href="https://jq.qq.com/?_wv=1027&k=EpxwvbtW">官方售后群:123456</a>
+					<!-- 导航 -->
+					<ul class="nav layui-layout-right">
+						<a class="layui-btn layui-btn-normal" href="/login">登录/注册</a>
+						<li class="active">
+							<a href="/index.html">首页</a>
+						</li>
 						<li>
-							产品与服务<span class="layui-icon layui-icon-down"></span>
+							产品与服务
+							<!-- 箭头 -->
+							<span class="layui-icon layui-icon-down"></span>
+							<!-- 导航子菜单 -->
 							<ul class="sub" style="display: none">
 								<li>
 									<p>香港CN2</p>
@@ -47,14 +59,107 @@
 								</li>
 							</ul>
 						</li>
-						<li>帮助中心</li>
-						<li>新闻资讯</li>
-						<li>代理规则</li>
-						<li>关于我们</li>
-						<li>宝塔页面</li>
+						<li><a href="/help.html">帮助中心</a></li>
+						<li><a href="/news.html">新闻资讯</a></li>
+						<li><a href="/broker.html">代理规则</a></li>
+						<li><a href="/about.html">关于我们</a></li>
+						<li><a href="/bt.html">宝塔页面</a></li>
 					</ul>
 				</div>
 			</div>
+		</div>
+		<!-- 中间内容 -->
+		<div class="body layui-container">
+			<!-- 展示图 -->
+			<div class="layui-row">
+				<img class="banner" src="./img/banner.png" alt="" />
+			</div>
+			<!-- 标题与副标题 -->
+			<div class="layui-row title">
+				<h2>开启你的云上之旅</h2>
+				<h5>即刻上云 选择67云 专享优惠</h5>
+			</div>
+
+			<div class="layui-row layui-col-space22">
+				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
+					<div>
+						<img src="img/yunfuwuqi.png" alt="" />
+						<h2>云服务器</h2>
+						<h5>基于KVM虚拟化技术，采用OVS网络</h5>
+						<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
+					</div>
+				</div>
+				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
+					<div>
+						<img src="img/yunxunizhuj.png" alt="" />
+						<h2>虚拟主机</h2>
+						<h5>基于主机分发技术，采用高速网络</h5>
+						<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
+					</div>
+				</div>
+				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
+					<div>
+						<img src="img/btzhuji.png" alt="" />
+						<h2>宝塔主机</h2>
+						<h5>基于宝塔面板分发技术，采用高速网络</h5>
+						<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
+					</div>
+				</div>
+				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
+					<div>
+						<img src="img/guajibao.png" alt="" />
+						<h2>挂机宝</h2>
+						<h5>基于KVM虚拟化技术，采用OVS网络</h5>
+						<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
+					</div>
+				</div>
+			</div>
+			<!-- 标题与副标题 -->
+			<div class="layui-row title">
+				<h2>我们的优势</h2>
+				<h5>67云数据运营积累的服务优势和技术优势</h5>
+			</div>
+			<div class="layui-row layui-col-space22">
+				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
+					<div>
+						<img src="img/people.png" alt="" />
+						<h2>专业技术支持</h2>
+						<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
+					</div>
+				</div>
+				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
+					<div>
+						<img src="img/wuliyoutuiding.png" alt="" />
+						<h2>专业技术支持</h2>
+						<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
+					</div>
+				</div>
+				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
+					<div>
+						<img src="img/wendinganquan.png" alt="" />
+						<h2>专业技术支持</h2>
+						<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
+					</div>
+				</div>
+				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
+					<div>
+						<img src="img/jianjieyiyong.png" alt="" />
+						<h2>专业技术支持</h2>
+						<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 分割线 -->
+		<div class="layui-border-black"></div>
+		<!-- 页脚 -->
+		<div class="footer">
+			<p>
+				<a href="/fwtk.pdf">服务条款</a> |
+				<a href="/ystk.pdf">隐私条款</a>
+			</p>
+			<p>Copyright © 2021-2022 <a href="/">67云数据</a> All Rights Reserved.</p>
+			<p><img src="img/beian.png" alt="" /><a href="ttps://beian.miit.gov.cn/">鲁ICP备2022010800号-6</a></p>
 		</div>
 	</body>
 	<script src="js/head.js"></script>
