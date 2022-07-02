@@ -4,39 +4,38 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="thirdparty/layui/css/layui.css" />
-		<script src="thirdparty/jquery/jquery.min.js"></script>
-		<script src="thirdparty/layui/layui.js"></script>
-		<link rel="stylesheet" href="css/head.css" />
-		<link rel="stylesheet" href="css/index.css" />
-		<title>67云数据|首页</title>
+		<title>Document</title>
+		<link rel="stylesheet" href="./node_modules/layui/dist/css/layui.css" />
+		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./node_modules/layui/dist/layui.js"></script>
+		<link rel="stylesheet" href="css/head.min.css" />
+		<script src="js/head.js"></script>
+		<link rel="stylesheet" href="css/index.min.css" />
+		<script src="js/index.js"></script>
 	</head>
 	<body>
-		<!-- 头部 -->
 		<div class="head">
 			<div class="layui-container">
 				<div class="head-top">
-					<i class="menu layui-icon layui-icon-spread-left layui-hide-md"></i>
-					<!-- Logo -->
-					<a href="/"><img src="img/logo.png" alt="" class="logo" /></a>
-					<!-- 登录或注册 -->
-					<a class="layui-btn layui-btn-normal" href="/login">登录/注册</a>
+					<i id="open_menu" class="layui-icon layui-icon-spread-left layui-hide-sm"></i>
+					<a href="/" id="logo">
+						<img class="logo" src="img/logo.png" alt="" />
+					</a>
+					<div class="layui-layout-right">
+						<a href="/login" class="layui-btn layui-btn-normal layui-hide-xs login-or-reg">登录/注册</a>
+					</div>
 				</div>
-				<div class="line"></div>
+				<hr class="layui-border-black layui-hide-xs" />
 				<div class="head-bottom">
-					<a href="https://jq.qq.com/?_wv=1027&k=EpxwvbtW">官方售后群:123456</a>
-					<!-- 导航 -->
-					<ul class="nav layui-layout-right">
-						<a class="layui-btn layui-btn-normal" href="/login">登录/注册</a>
-						<li class="active">
-							<a href="/index.html">首页</a>
-						</li>
+					<a class="guanfang layui-hide-xs" href="https://jq.qq.com/?_wv=1027&k=EpxwvbtW">官方售后群:123456</a>
+					<div id="shade" class="layui-layer-shade"></div>
+					<ul class="menu layui-layout-right">
+						<i id="close_menu" class="layui-icon layui-icon-close layui-layout-right layui-hide-sm"></i>
+						<a href="/login" class="layui-btn layui-btn-normal layui-hide-sm login-or-reg">登录/注册</a>
+						<li class="active"><a href="/">首页</a></li>
 						<li>
-							产品与服务
-							<!-- 箭头 -->
-							<span class="layui-icon layui-icon-down"></span>
-							<!-- 导航子菜单 -->
-							<ul class="sub" style="display: none">
+							产品与服务 <i class="layui-icon layui-icon-down"></i>
+							<ul class="sub-menu">
 								<li>
 									<p>香港CN2</p>
 									<a href="/cart">香港CN2 1H1G 13.99一个月</a>
@@ -63,96 +62,185 @@
 						<li><a href="/news.html">新闻资讯</a></li>
 						<li><a href="/broker.html">代理规则</a></li>
 						<li><a href="/about.html">关于我们</a></li>
-						<li><a href="/bt.html">宝塔页面</a></li>
+						<li><a href="/bt.html">宝塔面板</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<!-- 中间内容 -->
-		<div class="body layui-container">
-			<!-- 展示图 -->
-			<div class="layui-row">
-				<img class="banner" src="./img/banner.png" alt="" />
+		<div class="body">
+			<div class="layui-container">
+				<div class="layui-row">
+					<img class="banner" src="img/banner.png" alt="" />
+				</div>
+				<div class="layui-row title">
+					<h2>开启你的云上之旅</h2>
+					<h5>即刻上云 选择67云 专享优惠</h5>
+				</div>
+				<div class="layui-row layui-col-space22 row3">
+					<div class="layui-col-md3 layui-col-sm6 layui-col-xs6 xxs12">
+						<div>
+							<img src="img/yunfuwuqi.png" alt="" />
+							<h2>云服务器</h2>
+							<h5>基于KVM虚拟化技术，采用OVS网络</h5>
+							<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
+						</div>
+					</div>
+					<div class="layui-col-md3 layui-col-sm6 layui-col-xs6 xxs12">
+						<div>
+							<img src="img/yunxunizhuj.png" alt="" />
+							<h2>虚拟主机</h2>
+							<h5>基于主机分发技术，采用高速网络</h5>
+							<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
+						</div>
+					</div>
+					<div class="layui-col-md3 layui-col-sm6 layui-col-xs6 xxs12">
+						<div>
+							<img src="img/btzhuji.png" alt="" />
+							<h2>宝塔主机</h2>
+							<h5>基于宝塔面板分发技术，采用高速网络</h5>
+							<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
+						</div>
+					</div>
+					<div class="layui-col-md3 layui-col-sm6 layui-col-xs6 xxs12">
+						<div>
+							<img src="img/guajibao.png" alt="" />
+							<h2>挂机宝</h2>
+							<h5>基于KVM虚拟化技术，采用OVS网络</h5>
+							<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
+						</div>
+					</div>
+				</div>
+				<div class="layui-row title">
+					<h2>我们的优势</h2>
+					<h5>67云数据运营积累的服务优势和技术优势</h5>
+				</div>
+				<div class="layui-row layui-col-space22 row5">
+					<div class="layui-col-md3 layui-col-sm6 layui-col-xs6 xxs12">
+						<div>
+							<img src="img/people.png" alt="" />
+							<h2>专业技术支持</h2>
+							<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
+						</div>
+					</div>
+					<div class="layui-col-md3 layui-col-sm6 layui-col-xs6 xxs12">
+						<div>
+							<img src="img/wuliyoutuiding.png" alt="" />
+							<h2>无理由退订</h2>
+							<p>敢承诺才敢让您放心，我们提供1天无理由 退订保证，购买服务后三天内不满意可以 申请退订</p>
+						</div>
+					</div>
+					<div class="layui-col-md3 layui-col-sm6 layui-col-xs6 xxs12">
+						<div>
+							<img src="img/wendinganquan.png" alt="" />
+							<h2>稳定安全</h2>
+							<p>稳定与安全始终是您最关心的问题，我 们的所有产品均为优质的机房，确保为 您提供超高在线率</p>
+						</div>
+					</div>
+					<div class="layui-col-md3 layui-col-sm6 layui-col-xs6 xxs12">
+						<div>
+							<img src="img/jianjieyiyong.png" alt="" />
+							<h2>简洁易用</h2>
+							<p>精细打磨的控制面板，高度集成的一 键式操作为您带来最为易用的体验， 抛弃繁琐操作，我们就是未来</p>
+						</div>
+					</div>
+				</div>
+				<div class="layui-row title">
+					<h2>助力企业成功上云案例</h2>
+					<h5>为您提供安全、稳定、合规的云服务，助力企业快速发展</h5>
+				</div>
+				<div class="layui-row row7">
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye1.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye2.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye3.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye4.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye5.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye6.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye7.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye8.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye9.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye10.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye11.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye12.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye13.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye14.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye15.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye16.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye17.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye18.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye19.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye20.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye21.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye22.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye23.png" alt="" /></a>
+					</div>
+					<div class="layui-col-md2 layui-col-sm3 layui-col-xs4 xxs6">
+						<a href="#"><img src="img/qiye24.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="layui-row title">
+					<h2>安全可靠的数据中心</h2>
+					<h5>为您提供安全稳定、覆盖广泛的高等级数据中心及运营保障</h5>
+				</div>
+				<div class="layui-row row9">
+					<div><img src="img/datacenter.png" alt="" /></div>
+				</div>
 			</div>
-			<!-- 标题与副标题 -->
-			<div class="layui-row title">
-				<h2>开启你的云上之旅</h2>
-				<h5>即刻上云 选择67云 专享优惠</h5>
-			</div>
-
-			<div class="layui-row layui-col-space22">
-				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
-					<div>
-						<img src="img/yunfuwuqi.png" alt="" />
-						<h2>云服务器</h2>
-						<h5>基于KVM虚拟化技术，采用OVS网络</h5>
-						<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
-					</div>
-				</div>
-				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
-					<div>
-						<img src="img/yunxunizhuj.png" alt="" />
-						<h2>虚拟主机</h2>
-						<h5>基于主机分发技术，采用高速网络</h5>
-						<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
-					</div>
-				</div>
-				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
-					<div>
-						<img src="img/btzhuji.png" alt="" />
-						<h2>宝塔主机</h2>
-						<h5>基于宝塔面板分发技术，采用高速网络</h5>
-						<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
-					</div>
-				</div>
-				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
-					<div>
-						<img src="img/guajibao.png" alt="" />
-						<h2>挂机宝</h2>
-						<h5>基于KVM虚拟化技术，采用OVS网络</h5>
-						<a href="/cart" class="layui-btn layui-btn-normal">前往查看</a>
-					</div>
-				</div>
-			</div>
-			<!-- 标题与副标题 -->
-			<div class="layui-row title">
-				<h2>我们的优势</h2>
-				<h5>67云数据运营积累的服务优势和技术优势</h5>
-			</div>
-			<div class="layui-row layui-col-space22">
-				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
-					<div>
-						<img src="img/people.png" alt="" />
-						<h2>专业技术支持</h2>
-						<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
-					</div>
-				</div>
-				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
-					<div>
-						<img src="img/wuliyoutuiding.png" alt="" />
-						<h2>专业技术支持</h2>
-						<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
-					</div>
-				</div>
-				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
-					<div>
-						<img src="img/wendinganquan.png" alt="" />
-						<h2>专业技术支持</h2>
-						<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
-					</div>
-				</div>
-				<div class="layui-col-md3 layui-col-sm6 layui-col-xs6">
-					<div>
-						<img src="img/jianjieyiyong.png" alt="" />
-						<h2>专业技术支持</h2>
-						<p>我们拥有强大的技术支持团队，如果您有 任何疑问，只需新建工单，便有专门的客 服与您联系</p>
-					</div>
+			<div id="about" class="about">
+				<i class="layui-icon layui-icon-chat"></i><br />
+				联系我们
+				<div class="content">
+					<p>客服在线时间</p>
+					<p>上午8:00-晚上12:00</p>
+					<p>客服QQ</p>
+					<p>上午8:00-晚上12:00</p>
 				</div>
 			</div>
 		</div>
-		<!-- 分割线 -->
-		<div class="layui-border-black"></div>
-		<!-- 页脚 -->
 		<div class="footer">
 			<p>
 				<a href="/fwtk.pdf">服务条款</a> |
@@ -162,5 +250,4 @@
 			<p><img src="img/beian.png" alt="" /><a href="ttps://beian.miit.gov.cn/">鲁ICP备2022010800号-6</a></p>
 		</div>
 	</body>
-	<script src="js/head.js"></script>
 </html>
