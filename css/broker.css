@@ -1,0 +1,84 @@
+.layui-col-space30 {
+  margin: -35px;
+}
+.layui-col-space30 > * {
+  padding: 35px;
+}
+.body .row2 > div > div {
+  height: 266px;
+  box-shadow: 0px 2px 4px 2px rgba(229, 229, 229, 0.25);
+  border-radius: 10px;
+}
+.body .style_bottom {
+  margin-bottom: 58px;
+}
+.body > .layui-container {
+  margin-bottom: 40px;
+}
+.body > .layui-container > div > h1 {
+  color: #000000;
+  font-size: 36px;
+  margin-top: 23px;
+  font-weight: 700;
+  text-align: center;
+}
+.body > .layui-container > div > p {
+  color: #808080;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 53px;
+}
+.row2 > div > div > h1 {
+  margin-top: 17px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.row2 > div > div > p {
+  color: #808080;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.row2 > div > div > div {
+  position: relative;
+  height: 30px;
+  margin-bottom: 15px;
+}
+.row2 > div .first_span {
+  left: 43px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.row2 > div .first_span ~ span {
+  color: #808080;
+  font-size: 13px;
+  font-weight: 400;
+  right: 33px;
+}
+.row2 > div > div .two_span_red {
+  color: #ff0000;
+  font-size: 13px;
+  font-weight: 800;
+}
+.row2 > div .layui-btn-normal {
+  width: 75px;
+  height: 25px;
+  background: #4197fa;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 0;
+  line-height: 23px;
+  margin-top: 15px;
+}
+body > div.body > div > div.layui-row.layui-col-space30.row2 > div {
+  text-align: center;
+}
+body > div.body > div > div.layui-row.layui-col-space30.row2 > div > div {
+  overflow: hidden;
+}

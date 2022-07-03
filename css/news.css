@@ -1,0 +1,50 @@
+.body > .layui-container > div > div {
+  height: 155px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  margin: 26px 0;
+  padding-left: 48px;
+  padding-top: 20px;
+  padding-right: 18px;
+}
+.body > .layui-container > div:first-child {
+  margin-top: 36px;
+}
+.body > .layui-container > div:last-child {
+  margin-bottom: 68px;
+}
+.text-a > h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.text-a > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight: 400;
+}
+.text-a .layui-btn-normal {
+  width: 84px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  text-align: center;
+  background: #4197fa;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  position: absolute;
+  right: 18px;
+  bottom: 14px;
+}
+.text-a > span {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 11px;
+}

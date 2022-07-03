@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./node_modules/layui/dist/css/layui.css" />
+		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./node_modules/layui/dist/layui.js"></script>
+		<link rel="stylesheet" href="css/login.min.css" />
+	</head>
+	<body>
+		<div class="layui-row">
+			<div class="layui-col-md5 layui-hide-sm layui-hide-xs left flex">
+				<div>
+					<img src="img/logo1.png" alt="" />
+					<h2>互联网企业数字化最佳合作伙伴</h2>
+					<h5>The best partner for digitalization of Internet enterprises</h5>
+				</div>
+				<div>
+					<p>助力客户数字化转型</p>
+					<p>推动组织智能化升级</p>
+					<p>激发企业持续性增长</p>
+				</div>
+				<div>
+					<a href="https://beian.miit.gov.cn/">
+						<img src="img/beian.png" alt="" />
+						鲁ICP备2022010800号-6
+					</a>
+				</div>
+			</div>
+			<div class="layui-col-md5 layui-col-md-offset1 layui-col-sm12 layui-col-xs12 right flex">
+				<div class="flex">
+					<img src="img/logo.png" alt="" />
+					<div class="layui-tab">
+						<ul class="layui-tab-title">
+							<li class="layui-this">手机登录</li>
+							<li>邮箱登录</li>
+						</ul>
+						<div class="layui-tab-content">
+							<div class="layui-tab-item layui-show">
+								<form action="" class="layui-form layui-form-pane">
+									<div class="layui-form-item">
+										<label class="layui-form-label layui-icon layui-icon-cellphone"></label>
+										<div class="layui-input-block">
+											<!-- 手机号 -->
+											<input type="text" name="user" required lay-verify="required" placeholder="请输入您的手机号" class="layui-input" />
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label layui-icon layui-icon-password"></label>
+										<div class="layui-input-block">
+											<!-- 密码 -->
+											<input type="password" name="pwd" required lay-verify="required" placeholder="请输入您的密码" class="layui-input" />
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label layui-icon layui-icon-auz"></label>
+										<div class="layui-input-inline">
+											<!-- 验证码 -->
+											<input type="text" name="yzm" required lay-verify="required" placeholder="请输入验证码" class="layui-input" />
+										</div>
+										<!-- 验证码图片 -->
+										<img
+											class="layui-layout-right"
+											src="https://img.js.design/assets/img/62be8544c63acff89fda4b74.png"
+											data-src="https://img.js.design/assets/img/62be8544c63acff89fda4b74.png"
+											alt=""
+										/>
+									</div>
+									<!-- 提交按钮 -->
+									<input type="submit" class="layui-input" value="立即登录" />
+								</form>
+							</div>
+							<div class="layui-tab-item">
+								<form action="" class="layui-form layui-form-pane">
+									<div class="layui-form-item">
+										<label class="layui-form-label layui-icon layui-icon-email"></label>
+										<div class="layui-input-block">
+											<!-- 邮箱 -->
+											<input type="text" name="title" required lay-verify="required" placeholder="请输入您的邮箱" class="layui-input" />
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label layui-icon layui-icon-password"></label>
+										<div class="layui-input-block">
+											<!-- 密码 -->
+											<input type="password" name="title" required lay-verify="required" placeholder="请输入您的密码" class="layui-input" />
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label layui-icon layui-icon-auz"></label>
+										<div class="layui-input-inline">
+											<!-- 验证码 -->
+											<input type="text" name="title" required lay-verify="required" placeholder="请输入验证码" class="layui-input" />
+										</div>
+										<!-- 验证码图片 -->
+										<img
+											class="layui-layout-right"
+											src="https://img.js.design/assets/img/62be8544c63acff89fda4b74.png"
+											data-src="https://img.js.design/assets/img/62be8544c63acff89fda4b74.png"
+											alt=""
+										/>
+									</div>
+									<!-- 登录按钮 -->
+									<input type="submit" class="layui-input" value="立即登录" />
+								</form>
+							</div>
+						</div>
+					</div>
+					<p>还没有账户? <a href="/reg">现在注册</a></p>
+				</div>
+				<div class="footer">
+					<p>
+						<a href="/fwtk.pdf">服务条款</a> |
+						<a href="/ystk.pdf">隐私条款</a>
+					</p>
+					<p>Copyright © 2021-2022 <a href="/">67云数据</a> All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
