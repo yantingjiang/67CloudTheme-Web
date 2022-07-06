@@ -65,14 +65,15 @@
 }
 .right .layui-tab {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
 }
 .right .layui-tab .layui-tab-title {
   text-align: center;
 }
 .right .layui-tab .layui-tab-title li {
-  width: 45%;
+  width: 50%;
   text-align: center;
+  box-sizing: border-box;
 }
 .right .layui-tab .layui-tab-title li:after {
   border: none;
@@ -87,9 +88,9 @@
   border: none;
   z-index: 1;
   pointer-events: none;
-  line-height: 45px;
-  height: 60px;
-  font-size: 24px;
+  line-height: 24px;
+  height: 38px;
+  font-size: 16px;
 }
 .right .layui-tab .layui-tab-content .layui-input-block,
 .right .layui-tab .layui-tab-content .layui-input-inline {
@@ -102,8 +103,8 @@
   border-radius: 10px;
 }
 .right .layui-tab .layui-tab-content input {
-  line-height: 60px;
-  height: 60px;
+  line-height: 38px;
+  height: 40px;
 }
 .right .layui-tab .layui-tab-content .layui-input-inline {
   width: 50% !important;
@@ -112,7 +113,7 @@
   position: relative;
 }
 .right .layui-tab .layui-tab-content img {
-  height: 60px;
+  height: 38px;
   width: calc(50% - 10px);
   object-fit: contain;
   border-radius: 10px;
@@ -121,7 +122,7 @@
 }
 .right .layui-tab .layui-tab-content [type='submit'] {
   background-color: #2a82e4;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   color: white;
   border-radius: 10px;

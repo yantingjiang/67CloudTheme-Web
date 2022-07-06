@@ -1,9 +1,9 @@
 .layui-tab-title > li {
-  width: 90% !important;
+  width: 100% !important;
 }
 button {
-  height: 60px !important;
-  line-height: 60px !important;
+  height: 38px !important;
+  line-height: 38px !important;
   width: calc(50% - 10px);
   object-fit: contain;
   border-radius: 10px !important;

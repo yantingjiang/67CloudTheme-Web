@@ -142,6 +142,10 @@
     display: block !important;
     margin-left: 0px !important;
   }
+  .head .menu li.active::after {
+    width: 20% !important;
+    left: 40% !important;
+  }
   .head .menu li .sub-menu {
     position: static !important;
     width: 100% !important;
